@@ -1,0 +1,28 @@
+let string = "30 days of Javascript";
+console.log(string);
+console.log(string.length);
+console.log(string.toUpperCase());
+console.log(string.toLowerCase());
+console.log(string.substring(0, 3));
+console.log(string.slice(3, 7));
+console.log(string.includes("script"));
+console.log(string.split());
+console.log(string.split(" "));
+console.log(string.replace("Javascript", "Python"));
+let stringTwo = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon";
+console.log(stringTwo.split(","));
+console.log(string.charCodeAt("J"));
+console.log(string.charAt(15));
+console.log(string.indexOf("a"));
+let conjuctions =
+  "You cannot end a sentence with because because because is a conjunction";
+console.log(conjuctions.search("because"));
+console.log(conjuctions.lastIndexOf("because"));
+console.log(conjuctions.indexOf("because"));
+console.log(string.trim(" "));
+console.log(string.startsWith("3"));
+console.log(string.endsWith("t"));
+console.log(string.match("a"));
+console.log(string.repeat(2));
+let concatenation = "30 days of ";
+console.log(concatenation.concat("Javascript"));

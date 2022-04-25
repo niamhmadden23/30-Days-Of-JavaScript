@@ -31,3 +31,9 @@ x = 10;
 do {
   console.log(x--);
 } while (x > 0);
+
+console.log("----FOR LOOP USING N ----");
+let n = 20;
+for (let num = 0; num <= n; num++) {
+  console.log(num);
+}

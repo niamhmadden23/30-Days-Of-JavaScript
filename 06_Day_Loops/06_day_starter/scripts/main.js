@@ -43,3 +43,8 @@ for (let number = 0; number < 5; number++) {
   string += "#";
   console.log(string);
 }
+
+console.log("exercise 5");
+for (i = 0; i <= 10; i++) {
+  console.log(`${i} * ${i} = ${i * i}`);
+}

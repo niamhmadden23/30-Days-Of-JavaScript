@@ -1,4 +1,3 @@
-console.log(countries);
 // alert("Open the browser console whenever you work on JavaScript");
 // alert("Open the console and check if the countries has been loaded");
 
@@ -44,12 +43,28 @@ itCompanies.slice(itCompanies.length - 1, 3);
 console.log(itCompanies.at(itCompanies.length / 2));
 itCompanies.pop();
 
-const webTechs = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Redux",
-  "Node",
-  "MongoDB",
-];
+let text =
+  "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.";
+
+console.log(text.split(" ").length);
+
+const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+shoppingCart.unshift("meat");
+console.log(shoppingCart);
+shoppingCart.push("sugar");
+console.log(shoppingCart);
+shoppingCart.splice(4, 1);
+console.log(shoppingCart);
+// console.log((shoppingCart.indexOf("tea") = "green tea"));
+
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+
+ages.sort();
+console.log(ages);
+
+// find the average of array
+let total = 0;
+for (i = 0; i < ages.length; i++) {
+  total += ages[i];
+}
+console.log(total / ages.length);

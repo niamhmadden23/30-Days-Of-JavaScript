@@ -32,8 +32,14 @@ do {
   console.log(x--);
 } while (x > 0);
 
-console.log("----FOR LOOP USING N ----");
+console.log("---- MORE FOR LOOPS ----");
 let n = 20;
 for (let num = 0; num <= n; num++) {
   console.log(num);
+}
+console.log("---- PRINTING # ----");
+let string = "";
+for (let number = 0; number < 5; number++) {
+  string += "#";
+  console.log(string);
 }

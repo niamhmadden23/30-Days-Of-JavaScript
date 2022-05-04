@@ -100,3 +100,40 @@ for (let i = 0; i < 5; i++) {
   array.push(Math.floor(Math.random() * 100 + 1));
 }
 console.log(array);
+
+console.log("----random ID-----");
+
+const characters =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+let tots = "";
+// id with random number of characters
+let randomNumber = Math.floor(Math.random() * 100);
+for (i = 0; i < randomNumber; i++) {
+  let random = Math.floor(Math.random() * characters.length);
+  tots += characters[random];
+}
+console.log(tots);
+
+console.log(" ---- Hex code ----");
+
+const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+let hexCode = "";
+let color = "#";
+for (i = 0; i <= 6; i++) {
+  let random = Math.floor(Math.random() * 6);
+  color += characters[random];
+}
+
+console.log(color);
+
+console.log("---- RGB ----");
+
+let rgb = "rgb";
+let colors = "";
+for (i = 0; i < 1; i++) {
+  colors = Math.floor(Math.random() * 255) + 1;
+  color1 = Math.floor(Math.random() * 255) + 1;
+  color2 = Math.floor(Math.random() * 255) + 1;
+  rgb = `${rgb}(${colors},${color1},${color2})`;
+}
+console.log(rgb);

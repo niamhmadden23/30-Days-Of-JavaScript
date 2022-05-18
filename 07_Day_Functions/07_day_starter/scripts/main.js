@@ -59,3 +59,53 @@ function swapValue(num1, num2) {
 }
 
 console.log(swapValue(2, 3));
+
+let array = ["hello"];
+const addItem = (item) => {
+  let pushedItem = array.push(item);
+  console.log(array);
+};
+addItem("Hello");
+addItem(23);
+
+let anotherArray = [23, 23, "Niamh"];
+const removeItem = () => {
+  let remove = anotherArray.pop();
+  console.log(anotherArray);
+};
+
+removeItem();
+
+const sumOfNumbers = (...numbers) => {
+  let sum = 0;
+  numbers.forEach((num) => {
+    sum += num;
+  });
+  return sum;
+};
+
+console.log(sumOfNumbers(1, 5, -6));
+
+const sumOfOdds = (...numbers) => {
+  let sum = 0;
+  numbers.forEach((num) => {
+    if (num % 2 != 0) {
+      sum += num;
+    }
+  });
+  return sum;
+};
+console.log(sumOfOdds(1, 2, 4));
+
+const sumOfEven = (...numbers) => {
+  let sum = 0;
+  numbers.forEach((num) => {
+    if (num % 2 === 0) {
+      sum += num;
+    }
+  });
+  return sum;
+};
+
+console.log(sumOfEven(1, 3, 6));
+console.log(sumOfEven(1, 3));
